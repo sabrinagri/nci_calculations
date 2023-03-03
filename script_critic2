@@ -1,0 +1,3 @@
+#!/bin/bash
+
+critic2 < input.cri > input.cro
