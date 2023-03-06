@@ -1,11 +1,11 @@
 #!/bin/bash
 
-mof=(sifsix-2-cu sifsix-2-i-cu)
-molecule=(methane ethane ethene ethyne propane propene propine n2)
+fragment1=(system1 system2)
+fragment2=(molec1 molec2 molec3 molec4 molec5 molec6 molec7)
 
-for i in "${mof[@]}"
+for i in "${fragment1[@]}"
 do
-        for j in "${molecule[@]}"
+        for j in "${fragment2[@]}"
         do
         cp script_critic2.sh ./nci_${i}_${j}
         chmod +x ./nci_${i}_${j}
